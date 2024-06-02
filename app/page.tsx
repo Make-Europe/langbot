@@ -5,6 +5,44 @@ import { CiStar } from "react-icons/ci";
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
 
+import React from 'react';
+import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+
+// pages
+
+import Exams from './pages/Exams'
+import Test from './pages/Test'
+import Mint from './pages/Mint'
+import Result from './pages/Result'
+import NotFound from './pages/NotFound'
+
+// layouts
+
+import RootLayout from './layouts/RootLayout'
+import HelpLayout from './layouts/HelpLayout'
+import ServicesLayout from './layouts/ServicesLayout'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route path="exams" element={<Exams />} />
+        <Route path="test" element={<Test />} />
+        <Route path="mint" element={<Mint />} />
+        <Route path="result" element={<Result />} />
+     <Route path="*" element={<NotFound />} />
+     </Route>
+  )
+)
+
+function App() {
+  return (
+    
+<RouterProvider router={router}/>
+  );
+}
+
+export default App
+
 export default function Home() {
   return (
     <div className='bg-zinc-900 min-h-screen items-center justify-center p-2'>

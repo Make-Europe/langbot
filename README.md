@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Göthe - Learn German, if you DER
 
-## Getting Started
+## About
 
-First, run the development server:
+Göthe is a Telegram Mini App developed during the Ton Boot Camp Berlin Hackathon. It facilitates German language learning through interactive lessons, group challenges, and incentivizes progress with NFT certificates that prove proficiency levels.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technology
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is built with [Next.js](https://nextjs.org/), using [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prerequisites
+
+- Node.js (min v18.17.0)
+
+### Running the Development Server
+
+1. Launch the development server:
+    ```bash
+    npm run dev
+    ```
+2. **Local Development:**
+
+    - Visit [http://localhost:443](http://localhost:443) in your browser.
+
+3. **Using Tailscale:**
+
+    - Navigate to your personal Tailscale URL (e.g., `https://yourapp.ts.net`) in your browser.
+    - Requires a running instance on your or your team's computer.
+
+4. **On Telegram:**
+
+    - The Mini App can be configured via the @BotFather with the `/editapp` command, where you will provide your hosting URL.
+    - Access the app directly at [t.me/Bitbay0_bot/myapp](t.me/Bitbay0_bot/myapp).
+
+### Editing
+
+- Modify the page by editing `app/page.tsx`; changes auto-update as you edit.
+
+## Deployment
+
+Deploy your project on the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), a hassle-free solution for hosting Next.js apps.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+For further details on Next.js:
+- [Next.js Documentation](https://nextjs.org/docs) - Official Next.js features and API guide.
+- [Learn Next.js](https://nextjs.org/learn) - Interactive tutorial.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Feel free to fork the [repository](https://github.com/vercel/next.js/) and submit pull requests.
